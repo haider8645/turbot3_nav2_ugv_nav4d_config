@@ -4,7 +4,7 @@ ugv_nav4d_ros2:
     read_pose_from_topic: false
     load_mls_from_file: true
     mls_file_type: "ply" #Options: bin, ply
-    mls_file_path: '/your_ros2_workspace/turbot3_nav2_ugv_nav4d_config/flat_plane_100x100_0pt1m.ply'
+    mls_file_path: '/fullpath/to/your_ros2_workspace/turbot3_nav2_ugv_nav4d_config/flat_plane_100x100_0pt1m.ply'
     mls_gap_size: 0.1
     robot_frame: base_link
     world_frame: odom
