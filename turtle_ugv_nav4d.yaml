@@ -8,7 +8,7 @@ ugv_nav4d_ros2:
     mls_gap_size: 0.1
     robot_frame: base_link
     world_frame: odom
-    grid_resolution: 0.1
+    grid_resolution: 0.2
     dist_max_x: 30
     dist_min_x: -30
     dist_max_y: 30
