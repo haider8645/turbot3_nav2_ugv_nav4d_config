@@ -4,8 +4,6 @@ Panels:
     Name: Displays
     Property Tree Widget:
       Expanded:
-        - /Global Options1
-        - /Status1
         - /Traversability Map1/Topic1
       Splitter Ratio: 0.5
     Tree Height: 655
@@ -91,8 +89,8 @@ Visualization Manager:
       Class: rviz_default_plugins/Path
       Color: 255; 0; 0
       Enabled: true
-      Head Diameter: 0.30000001192092896
-      Head Length: 0.20000000298023224
+      Head Diameter: 0.10000000149011612
+      Head Length: 0.10000000149011612
       Length: 1
       Line Style: Billboards
       Line Width: 0.029999999329447746
@@ -101,11 +99,11 @@ Visualization Manager:
         X: 0
         Y: 0
         Z: 0
-      Pose Color: 255; 85; 255
-      Pose Style: Arrows
+      Pose Color: 0; 255; 255
+      Pose Style: None
       Radius: 0.10000000149011612
-      Shaft Diameter: 0.30000001192092896
-      Shaft Length: 0.10000000149011612
+      Shaft Diameter: 0.05000000074505806
+      Shaft Length: 0.20000000298023224
       Topic:
         Depth: 5
         Durability Policy: Volatile
@@ -148,7 +146,7 @@ Visualization Manager:
       Value: true
     - Alpha: 1
       Class: rviz_default_plugins/PointStamped
-      Color: 204; 41; 204
+      Color: 85; 255; 255
       Enabled: true
       History Length: 1
       Name: Lookahead Point
@@ -165,6 +163,17 @@ Visualization Manager:
       Enabled: true
       Name: MarkerArray
       Namespaces:
+        arrow_540: true
+        arrow_541: true
+        arrow_542: true
+        arrow_543: true
+        arrow_544: true
+        arrow_545: true
+        arrow_546: true
+        arrow_547: true
+        arrow_548: true
+        arrow_549: true
+        arrow_550: true
         arrow_551: true
         arrow_552: true
         arrow_553: true
@@ -185,106 +194,6 @@ Visualization Manager:
         arrow_568: true
         arrow_569: true
         arrow_570: true
-        arrow_571: true
-        arrow_572: true
-        arrow_573: true
-        arrow_574: true
-        arrow_575: true
-        arrow_576: true
-        arrow_577: true
-        arrow_578: true
-        arrow_579: true
-        arrow_580: true
-        arrow_581: true
-        arrow_582: true
-        arrow_583: true
-        arrow_584: true
-        arrow_585: true
-        arrow_586: true
-        arrow_587: true
-        arrow_588: true
-        arrow_589: true
-        arrow_590: true
-        arrow_591: true
-        arrow_592: true
-        arrow_593: true
-        arrow_594: true
-        arrow_595: true
-        arrow_596: true
-        arrow_597: true
-        arrow_598: true
-        arrow_599: true
-        arrow_600: true
-        arrow_601: true
-        arrow_602: true
-        arrow_603: true
-        arrow_604: true
-        arrow_605: true
-        arrow_606: true
-        arrow_607: true
-        arrow_608: true
-        arrow_609: true
-        arrow_610: true
-        arrow_611: true
-        arrow_612: true
-        arrow_613: true
-        arrow_614: true
-        arrow_615: true
-        arrow_616: true
-        arrow_617: true
-        arrow_618: true
-        arrow_619: true
-        arrow_620: true
-        arrow_621: true
-        arrow_622: true
-        arrow_623: true
-        arrow_624: true
-        arrow_625: true
-        arrow_626: true
-        arrow_627: true
-        arrow_628: true
-        arrow_629: true
-        arrow_630: true
-        arrow_631: true
-        arrow_632: true
-        arrow_633: true
-        arrow_634: true
-        arrow_635: true
-        arrow_636: true
-        arrow_637: true
-        arrow_638: true
-        arrow_639: true
-        arrow_640: true
-        arrow_641: true
-        arrow_642: true
-        arrow_643: true
-        arrow_644: true
-        arrow_645: true
-        arrow_646: true
-        arrow_647: true
-        arrow_648: true
-        arrow_649: true
-        arrow_650: true
-        arrow_651: true
-        arrow_652: true
-        arrow_653: true
-        arrow_654: true
-        arrow_655: true
-        arrow_656: true
-        arrow_657: true
-        arrow_658: true
-        arrow_659: true
-        arrow_660: true
-        arrow_661: true
-        arrow_662: true
-        arrow_663: true
-        arrow_664: true
-        arrow_665: true
-        arrow_666: true
-        arrow_667: true
-        arrow_668: true
-        arrow_669: true
-        arrow_670: true
         legend: true
       Topic:
         Depth: 5
@@ -320,6 +229,14 @@ Visualization Manager:
           Show Axes: false
           Show Trail: false
           Value: true
+        camera_depth_frame:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+        camera_depth_optical_frame:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
         camera_link:
           Alpha: 1
           Show Axes: false
@@ -370,10 +287,45 @@ Visualization Manager:
       Update Interval: 0
       Value: true
       Visual Enabled: true
+    - Alpha: 1
+      Buffer Length: 1
+      Class: rviz_default_plugins/Path
+      Color: 255; 0; 0
+      Enabled: true
+      Head Diameter: 0.30000001192092896
+      Head Length: 0.20000000298023224
+      Length: 0.30000001192092896
+      Line Style: Lines
+      Line Width: 0.10000000149011612
+      Name: Combined Path
+      Offset:
+        X: 0
+        Y: 0
+        Z: 0
+      Pose Color: 255; 85; 255
+      Pose Style: None
+      Radius: 0.029999999329447746
+      Shaft Diameter: 0.10000000149011612
+      Shaft Length: 0.10000000149011612
+      Topic:
+        Depth: 5
+        Durability Policy: Volatile
+        Filter size: 10
+        History Policy: Keep Last
+        Reliability Policy: Reliable
+        Value: /follow_path_client/combined_path
+      Value: true
     - Class: rviz_default_plugins/Axes
       Enabled: true
       Length: 1
-      Name: Axes
+      Name: Base Link
+      Radius: 0.10000000149011612
+      Reference Frame: base_link
+      Value: true
+    - Class: rviz_default_plugins/Axes
+      Enabled: true
+      Length: 1
+      Name: Odom
       Radius: 0.10000000149011612
       Reference Frame: odom
       Value: true
@@ -423,25 +375,25 @@ Visualization Manager:
   Views:
     Current:
       Class: rviz_default_plugins/Orbit
-      Distance: 53.2092170715332
+      Distance: 13.360468864440918
       Enable Stereo Rendering:
         Stereo Eye Separation: 0.05999999865889549
         Stereo Focal Distance: 1
         Swap Stereo Eyes: false
         Value: false
       Focal Point:
-        X: 19.15089988708496
-        Y: 19.232765197753906
-        Z: -1.7957029342651367
+        X: 19.757164001464844
+        Y: 25.18309211730957
+        Z: 2.867682933807373
       Focal Shape Fixed Size: true
       Focal Shape Size: 0.05000000074505806
       Invert Z Axis: false
       Name: Current View
       Near Clip Distance: 0.009999999776482582
-      Pitch: 0.9297971725463867
+      Pitch: 1.5447975397109985
       Target Frame: <Fixed Frame>
       Value: Orbit (rviz_default_plugins)
-      Yaw: 3.139191150665283
+      Yaw: 3.3760082721710205
     Saved: ~
 Window Geometry:
   Displays:
@@ -449,7 +401,7 @@ Window Geometry:
   Height: 946
   Hide Left Dock: false
   Hide Right Dock: true
-  QMainWindow State: 000000ff00000000fd00000004000000000000015600000318fc0200000008fb0000001200530065006c0065006300740069006f006e00000001e10000009b0000005c00fffffffb0000001e0054006f006f006c002000500072006f007000650072007400690065007302000001ed000001df00000185000000a3fb000000120056006900650077007300200054006f006f02000001df000002110000018500000122fb000000200054006f006f006c002000500072006f0070006500720074006900650073003203000002880000011d000002210000017afb000000100044006900730070006c006100790073010000003b00000318000000c700fffffffb0000002000730065006c0065006300740069006f006e00200062007500660066006500720200000138000000aa0000023a00000294fb00000014005700690064006500530074006500720065006f02000000e6000000d2000003ee0000030bfb0000000c004b0069006e0065006300740200000186000001060000030c00000261000000010000010f00000318fc0200000003fb0000001e0054006f006f006c002000500072006f00700065007200740069006500730100000041000000780000000000000000fb0000000a00560069006500770073000000003b00000318000000a000fffffffb0000001200530065006c0065006300740069006f006e010000025a000000b200000000000000000000000200000490000000a9fc0100000001fb0000000a00560069006500770073030000004e00000080000002e10000019700000003000007800000003efc0100000002fb0000000800540069006d00650100000000000007800000025300fffffffb0000000800540069006d00650100000000000004500000000000000000000006240000031800000004000000040000000800000008fc0000000100000002000000010000000a0054006f006f006c00730100000000ffffffff0000000000000000
+  QMainWindow State: 000000ff00000000fd00000004000000000000015600000318fc0200000008fb0000001200530065006c0065006300740069006f006e00000001e10000009b0000005c00fffffffb0000001e0054006f006f006c002000500072006f007000650072007400690065007302000001ed000001df00000185000000a3fb000000120056006900650077007300200054006f006f02000001df000002110000018500000122fb000000200054006f006f006c002000500072006f0070006500720074006900650073003203000002880000011d000002210000017afb000000100044006900730070006c006100790073010000003b00000318000000c700fffffffb0000002000730065006c0065006300740069006f006e00200062007500660066006500720200000138000000aa0000023a00000294fb00000014005700690064006500530074006500720065006f02000000e6000000d2000003ee0000030bfb0000000c004b0069006e0065006300740200000186000001060000030c00000261000000010000010f00000318fc0200000003fb0000001e0054006f006f006c002000500072006f00700065007200740069006500730100000041000000780000000000000000fb0000000a00560069006500770073000000003b00000318000000a000fffffffb0000001200530065006c0065006300740069006f006e010000025a000000b200000000000000000000000200000490000000a9fc0100000001fb0000000a00560069006500770073030000004e00000080000002e10000019700000003000003c00000003efc0100000002fb0000000800540069006d00650100000000000003c00000025300fffffffb0000000800540069006d00650100000000000004500000000000000000000002640000031800000004000000040000000800000008fc0000000100000002000000010000000a0054006f006f006c00730100000000ffffffff0000000000000000
   Selection:
     collapsed: false
   Time:
@@ -458,6 +410,6 @@ Window Geometry:
     collapsed: false
   Views:
     collapsed: true
-  Width: 1920
-  X: 0
+  Width: 960
+  X: 960
   Y: 27

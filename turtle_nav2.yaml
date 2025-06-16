@@ -49,7 +49,7 @@ controller_server:
       regulated_linear_scaling_min_radius: 2.0
       regulated_linear_scaling_min_speed: 0.1 
 
-      max_robot_pose_search_dist: 2.0
+      max_robot_pose_search_dist: 10.0
 
       use_interpolation: true
 local_costmap:
